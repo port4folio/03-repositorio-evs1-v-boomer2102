@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAventura Ñuble</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu-principal">
+            <h2 class="logo">EcoAventura Ñuble</h2>
+
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#itinerario">Itinerario</a></li>
+                <li><a href="#reservar">Reservar</a></li>
+                <li><a href="#consejos">Consejos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="paginas/intranet.html">Intranet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="hero-contenido">
+                <h1>Explora lo inexplorado</h1>
+                <p>
+                    Vive experiencias de ecoturismo y turismo aventura en contacto con la naturaleza,
+                    con rutas seguras, guías especializados y paisajes únicos.
+                </p>
+                <a href="#reservar" class="btn btn-success btn-lg">Reserva tu aventura</a>
+            </div>
+        </section>
+
+        <section id="tours" class="container mt-5">
+            <h2>Tours destacados</h2>
+
+            <div id="carouselTours" class="carousel slide shadow-lg" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselTours" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Trekking"></button>
+                    <button type="button" data-bs-target="#carouselTours" data-bs-slide-to="1" aria-label="Rafting"></button>
+                    <button type="button" data-bs-target="#carouselTours" data-bs-slide-to="2" aria-label="Ecoturismo"></button>
+                    <button type="button" data-bs-target="#carouselTours" data-bs-slide-to="3" aria-label="Camping"></button>
+                    <button type="button" data-bs-target="#carouselTours" data-bs-slide-to="4" aria-label="Cabalgata"></button>
+                    <button type="button" data-bs-target="#carouselTours" data-bs-slide-to="5" aria-label="Fauna nativa"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/imagen1.png" class="d-block w-100" alt="Rafting río Ñuble">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/imagen2.png" class="d-block w-100" alt="treking laguna dañicalqui">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/imagen3.png" class="d-block w-100" alt="treking laguna del huemul">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/imagen4.png" class="d-block w-100" alt="treking laguna de la plata">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/imagen5.png" class="d-block w-100" alt="Tour gruta de pangues">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/imagen6.png" class="d-block w-100" alt="treking fumarolas">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTours" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTours" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+
+            <div class="tarjetas-tours mt-4">
+                <article class="card-tour">
+                    <i class="bi bi-tree-fill"></i>
+                    <h3>Trekking</h3>
+                    <p>Senderos guiados con dificultad baja, media y alta.</p>
+                </article>
+
+                <article class="card-tour">
+                    <i class="bi bi-water"></i>
+                    <h3>Rafting</h3>
+                    <p>El descenso mas extremo que podras experimentar en el rio ñuble.</p>
+                </article>
+
+                <article class="card-tour">
+                    <i class="bi bi-camera-fill"></i>
+                    <h3>Fotografía</h3>
+                    <p>Rutas pensadas para observar y fotografiar la hermosa fauna de la montaña ñublensina</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="itinerario" class="container mt-5">
+            <h2>Itinerario de Tours</h2>
+
+            <table class="table table-striped table-hover table-bordered">
+                <thead class="table-success">
+                    <tr>
+                        <th colspan="4" class="text-center">Itinerarios y precios disponibles</th>
+                    </tr>
+                    <tr>
+                        <th>Destino</th>
+                        <th>Dificultad</th>
+                        <th>Precio</th>
+                        <th>Temporada</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Rafting río Ñuble</td>
+                        <td>Media</td>
+                        <td>$45.000</td>
+                        <td rowspan="2">Primavera - verano</td>
+                    </tr>
+
+                    <tr>
+                        <td>Laguna del Huemul</td>
+                        <td>Alta</td>
+                        <td>$65.000</td>
+                    </tr>
+
+                    <tr>
+                        <td>treking fumarolas</td>
+                        <td>Alta</td>
+                        <td>$75.000</td>
+                        <td>Todo el año</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="reservar" class="container mt-5 seccion-reserva">
+            <h2>Pasos para reservar tu aventura</h2>
+
+            <ol>
+                <li>Elige el tour que más se adapte a tu nivel de experiencia.</li>
+                <li>Completa el formulario de contacto con tus datos.</li>
+                <li>Espera la confirmación del equipo de EcoAventura Ñuble.</li>
+                <li>Realiza el pago de reserva y prepara tu equipamiento personal.</li>
+            </ol>
+        </section>
+
+        <section class="container mt-5 contenido-flex">
+            <section id="contacto" class="formulario-contacto">
+                <h2>Contacto</h2>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="tour" class="form-label">Tour de interés</label>
+                        <select id="tour" class="form-select">
+                            <option selected>Selecciona una opción</option>
+                            <option>Trekking Reserva Ñuble</option>
+                            <option>Rafting</option>
+                            <option>Fotografía natural</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea id="mensaje" class="form-control" rows="4" placeholder="Escribe tu consulta"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Enviar solicitud</button>
+                </form>
+            </section>
+
+            <aside id="consejos" class="recomendaciones">
+                <h2>Consejos para tu viaje</h2>
+                <ul>
+                    <li>Lleva ropa cómoda y calzado adecuado.</li>
+                    <li>Usa bloqueador solar y botella reutilizable.</li>
+                    <li>Respeta la flora, fauna y señalética del lugar.</li>
+                    <li>Llega 20 minutos antes del horario indicado.</li>
+                </ul>
+            </aside>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 EcoAventura Ñuble | Turismo responsable y aventura segura</p>
+        <p>
+            <i class="bi bi-instagram"></i> Instagram |
+            <i class="bi bi-facebook"></i> Facebook |
+            <i class="bi bi-envelope-fill"></i> contacto@ecoaventura.cl
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

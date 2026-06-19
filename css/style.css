@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #f3f7f2;
+    color: #1f2d24;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    color: #1d5c36;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #1d3b2a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    gap: 20px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #e9f5ec;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #2e8b57;
+    color: white;
+}
+
+.hero {
+    min-height: 480px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("../images/fondo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-contenido {
+    max-width: 800px;
+    color: white;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.carousel img {
+    max-height: 440px;
+    object-fit: cover;
+}
+
+.tarjetas-tours {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.card-tour {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease;
+}
+
+.card-tour:hover {
+    transform: translateY(-6px);
+}
+
+.card-tour i {
+    font-size: 42px;
+    color: #2e8b57;
+}
+
+.seccion-reserva {
+    background-color: #e4f3e8;
+    padding: 30px;
+    border-left: 6px solid #2e8b57;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 80, 40, 0.15);
+}
+
+.seccion-reserva ol {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contenido-flex {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.formulario-contacto {
+    flex: 2;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recomendaciones {
+    flex: 1;
+    background-color: #dff0e4;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #2e8b57;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recomendaciones ul {
+    padding-left: 20px;
+}
+
+.recomendaciones li {
+    margin-bottom: 12px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #ffcc00;
+    outline-offset: 3px;
+}
+
+footer {
+    background-color: #1d3b2a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .menu-principal {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .contenido-flex {
+        flex-direction: column;
+    }
+
+    .formulario-contacto,
+    .recomendaciones {
+        width: 100%;
+    }
+}
